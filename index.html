@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro Usuario</title>
+</head>
+<body>
+    <form>
+        <div class="labelDiv">
+            <label for="name">Nome Completo</label>
+            <input type="text" id="name">
+        </div>
+        <div class="labelDiv">
+            <label for="telephone">Telefone</label>
+            <input type="text" id="telephone">
+        </div>
+        <div class="labelDiv">
+            <label for="email">E-Mail</label>
+            <input type="text" id="email">
+        </div>
+        <div class="labelDiv">
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" onchange="getCEP(this.value)">
+        </div>
+        <div class="labelDiv">
+            <label for="state">Estado</label>
+            <input type="text" id="state">
+        </div>
+        <div class="labelDiv">
+            <label for="city">Cidade</label>
+            <input type="text" id="city">
+        </div>
+        <div class="labelDiv">
+            <label for="street">Rua</label>
+            <input type="text" id="street">
+        </div>
+        <div class="labelDiv">
+            <label for="district">Bairro</label>
+            <input type="text" id="district">
+        </div>
+        <button>Salvar Dados</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
