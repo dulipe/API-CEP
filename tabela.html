@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Usuarios Cadastrados</title>
+</head>
+<body onload="render()">
+    <header>
+        <div><a href="index.html">CADASTRAR USUARIOS</a></div>
+    </header>
+
+    <h1>TABELA DE USUARIOS CADASTRADOS</h1>
+
+    <div class="hscroll">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Nome completo</th>                    
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    <th>Cep</th>
+                    <th>Estado</th>
+                    <th>Cidade</th>
+                    <th>Rua</th>
+                    <th>Bairro</th>
+                    <th>Data de cadastro</th>
+                    <th>Deletar?</th>
+                </tr>
+            </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+    </div>
+
+    <div id="contador"></div>
+
+    <script src="tabela.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <title>Cadastro Usuario</title>
 </head>
-<body>
+<body onload="contador()">
+    <header>
+        <div><a href="tabela.html">USUARIOS CADASTRADOS</a></div>
+    </header>
+
     <form>
         <div class="labelDiv">
             <label for="name">Nome Completo</label>
@@ -15,7 +19,7 @@
         </div>
         <div class="labelDiv">
             <label for="telephone">Telefone</label>
-            <input type="text" id="telephone">
+            <input type="text" id="telephone" maxlength="15">
         </div>
         <div class="labelDiv">
             <label for="email">E-Mail</label>
@@ -23,7 +27,7 @@
         </div>
         <div class="labelDiv">
             <label for="cep">CEP</label>
-            <input type="text" id="cep" onchange="getCEP(this.value)">
+            <input type="text" id="cep" onchange="GetCEP(this.value)" maxlength="10">
         </div>
         <div class="labelDiv">
             <label for="state">Estado</label>
@@ -41,8 +45,10 @@
             <label for="district">Bairro</label>
             <input type="text" id="district">
         </div>
-        <button>Salvar Dados</button>
+        <button onclick="cadastrar()" type="reset">Salvar Dados</button>
     </form>
+
+    <div id="contador"></div>
 
     <script src="script.js"></script>
 </body>
